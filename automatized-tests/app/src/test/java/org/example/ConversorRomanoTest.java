@@ -45,5 +45,23 @@ public class ConversorRomanoTest {
         ConversorRomano conversor = new ConversorRomano();
         assertEquals(1000, conversor.converte("M"));
     }
+
+    @Test
+    public void testII() {
+        ConversorRomano conversor = new ConversorRomano();
+        assertEquals(2, conversor.converte("II"));
+    }
+
+    @Test
+    public void testXXII() {
+        ConversorRomano conversor = new ConversorRomano();
+        assertEquals(22, conversor.converte("XXII"));
+    }
+
+    @Test
+    public void testIV() {
+        ConversorRomano conversor = new ConversorRomano();
+        assertEquals(4, conversor.converte("IV"));
+    }
 }
 
